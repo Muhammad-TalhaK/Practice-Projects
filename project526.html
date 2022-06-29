@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      body {
+      background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+      background-size: auto;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #26a9e0; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+    </style>
+  </head>
+  
+  <body>
+      <form onsubmit="takeValue()">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" id="name" type="text" name="name" placeholder="Full name" required>
+		  <input class="fname" id="fname" type="text" name="fatherName" placeholder="Father name" required>
+          <input type="text" id="iname"  name="name" placeholder="Institution Name" required>
+		  <input type="number" id="sem" name="name" placeholder="Semester" required>
+          <input type="number" id="phone" name="name" placeholder="Phone number" required>
+        </div>
+		
+		<div >
+		Subject: <input id="subName1" type="text" name="subName1" required>
+		Enter Total Marks: <input id="tm1" type="number" name="tm1" required>
+		Enter Obtained Marks: <input id="om1" type="number" name="om1"  required>
+		</div>
+		
+		<div >
+		Subject: <input type="text" id="subName2" name="subName2" required>
+		Enter Total Marks: <input type="number" id="tm2" name="tm2" required>
+		Enter Obtained Marks: <input type="number" id="om2" name="om2" required >
+		</div>
+		
+		<div >
+		Subject: <input type="text" id="subName3" name="subName3" required>
+		Enter Total Marks: <input type="number" id="tm3" name="tm3" required>
+		Enter Obtained Marks: <input type="number" id="om3" name="om3" required>
+		</div>
+		
+		<div >
+		Subject: <input type="text" id="subName4" name="subName4" required>
+		Enter Total Marks: <input type="number" id="tm4" name="tm4" required>
+		Enter Obtained Marks: <input type="number" id="om4" name="om4" required>
+		</div>
+		
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+	
+	<script>
+	
+	function takeValue(){
+		var name = document.getElementById("name").value;
+		var fname = document.getElementById("fname").value;
+		var iname = document.getElementById("iname").value;
+		var sem = document.getElementById("sem").value;
+		var phone = document.getElementById("phone").value;
+		var subName1 = document.getElementById("subName1").value;
+		var subName2 = document.getElementById("subName2").value;
+		var subName3 = document.getElementById("subName3").value;
+		var subName4 = document.getElementById("subName4").value;
+		var tm1 = document.getElementById("tm1").value;
+		var tm2 = document.getElementById("tm2").value;
+		var tm3 = document.getElementById("tm3").value;
+		var tm4 = document.getElementById("tm4").value;
+				
+		if(document.getElementById('om1').value <= tm1){
+		var om1 = document.getElementById("om1").value;}
+	else{alert('Value cannot exceed Total Marks') }
+	
+	if(document.getElementById('om2').value <= tm2){
+		var om2 = document.getElementById("om2").value;}
+		else{alert('Value cannot exceed Total Marks')}
+	
+	if(document.getElementById('om3').value <= tm3){
+		var om3 = document.getElementById("om3").value;}
+		else{alert('Value cannot exceed Total Marks')}
+	
+	if(document.getElementById('om4').value <= tm4){
+		var om4 = document.getElementById("om4").value;
+		}
+		else{alert('Value cannot exceed Total Marks')}
+		
+		document.write("YOUR INFO--<br>"+"Name: "+name+"<br>");
+		document.write("Father's Name: "+fname+"<br>");
+		document.write("Institution: "+iname+"<br>");
+		document.write("Semester: "+sem+"<br>");
+		document.write("Contact Info: "+phone+"<br>");
+		
+		document.write('<table border="1">');
+		
+		document.write('<thead>');
+		document.write('<th>'+'Subject'+'</th>');
+		document.write('<th>'+'Total Marks'+'</th>');
+		document.write('<th>'+'Obtained Marks'+'</th>');
+		document.write('</thead>');
+		
+		document.write('<tbody>');
+		
+		document.write('<tr>');
+		document.write('<td>'+subName1+'</td>');
+		document.write('<td>'+tm1+'</td>');
+		document.write('<td>'+om1+'</td>');
+		document.write('</tr>');
+		
+		document.write('<tr>');
+		document.write('<td>'+subName2+'</td>');
+		document.write('<td>'+tm2+'</td>');
+		document.write('<td>'+om2+'</td>');
+		document.write('</tr>');
+		
+		document.write('<tr>');
+		document.write('<td>'+subName3+'</td>');
+		document.write('<td>'+tm3+'</td>');
+		document.write('<td>'+om3+'</td>');
+		document.write('</tr>');
+		
+		document.write('<tr>');
+		document.write('<td>'+subName4+'</td>');
+		document.write('<td>'+tm4+'</td>');
+		document.write('<td>'+om4+'</td>');
+		document.write('</tr>');
+		
+		document.write('</tbody>');
+	    document.write('</table>');	
+	}
+	
+	</script>
+	
+  </body>
+</html>
