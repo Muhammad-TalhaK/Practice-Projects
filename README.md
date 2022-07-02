@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Muhammad-TalhaK
 - 👀 I’m interested in Development of all sorts
 - 🌱 I’m currently learning React native
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on Fiverr
 - 📫 How to reach me ...
 
 <!---
