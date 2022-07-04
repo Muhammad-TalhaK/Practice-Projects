@@ -14,7 +14,8 @@ function takeValue(){
     var tm4 = document.getElementById("tm4").value;
             
     if(document.getElementById('om1').value <= tm1){
-    var om1 = document.getElementById("om1").value;}
+    var om1 = document.getElementById("om1").value;
+}
 else{alert('Value cannot exceed Total Marks') }
 
 if(document.getElementById('om2').value <= tm2){
