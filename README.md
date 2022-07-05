@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning React native
 - 💞️ I’m looking to collaborate on Fiverr
 - 📫 How to reach me :tk4934939@gmail.com
+- I'm currently working as Android Developer
 
 <!---
 Muhammad-TalhaK/Muhammad-TalhaK is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
